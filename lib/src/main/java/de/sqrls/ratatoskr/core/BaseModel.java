@@ -15,7 +15,7 @@ import java.util.UUID;
 @SuperBuilder(toBuilder = true)
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseModel implements IBaseObject<UUID> {
+public class BaseModel implements IBaseModel {
 
    /**UUID of object**/
     UUID id;

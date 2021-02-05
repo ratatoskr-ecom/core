@@ -1,11 +1,11 @@
 package de.sqrls.ratatoskr.core.messaging;
 
 import cc.dividebyzero.spring.foundations.IBaseObject;
-import de.sqrls.ratatoskr.core.BaseModel;
+import de.sqrls.ratatoskr.core.IBaseModel;
 
 import java.util.UUID;
 
-public interface IMessage<PAYLOAD extends BaseModel> extends IBaseObject<UUID> {
+public interface IMessage<PAYLOAD extends IBaseModel> extends IBaseObject<UUID> {
 
     PAYLOAD getPayload();
 
