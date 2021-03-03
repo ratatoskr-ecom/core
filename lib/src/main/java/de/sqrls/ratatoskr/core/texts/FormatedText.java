@@ -2,6 +2,7 @@ package de.sqrls.ratatoskr.core.texts;
 
 import com.neovisionaries.i18n.LanguageCode;
 import de.sqrls.ratatoskr.core.BaseModel;
+import de.sqrls.ratatoskr.core.ITranslateable;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
@@ -17,7 +18,7 @@ import lombok.experimental.SuperBuilder;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @EqualsAndHashCode(callSuper = true)
-public class FormatedText extends BaseModel {
+public class FormatedText extends BaseModel implements ITranslateable {
 
     /**
      * ISO lang code
