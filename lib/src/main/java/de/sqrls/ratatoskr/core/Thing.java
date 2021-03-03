@@ -5,6 +5,7 @@ import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 
 import java.net.URL;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -34,7 +35,7 @@ public class Thing extends BaseModel {
     String description;
 
         /** A CreativeWork or Event about this Thing.\n Inverse property: about.**/
-    Thing subjectOf;
+    UUID subjectOf;
 
 
 
