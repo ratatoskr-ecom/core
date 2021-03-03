@@ -8,4 +8,5 @@ import com.neovisionaries.i18n.LanguageCode;
 public interface ITranslateable extends IBaseModel{
 
     LanguageCode getLanguageCode();
+    void setLanguageCode(LanguageCode languageCode);
 }
