@@ -14,6 +14,16 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 public class GeoCoordinates extends Thing {
 
+    enum PLANET {
+        /**The Default**/
+        EARTH,
+        /** Daddy Musk takes us to Mars**/
+        MARS
+    }
+
+    @Builder.Default
+    PLANET planet = PLANET.EARTH;
+
     /**The latitude of a location. For example 37.42242 (WGS 84).**/
     double latitude;
     /**The longitude of a location. For example -122.08585 (WGS 84).**/
