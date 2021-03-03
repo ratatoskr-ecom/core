@@ -45,7 +45,7 @@ public class BaseModel implements IBaseModel {
    @Builder.Default
     boolean isDeleted = false;
 
-    UUID owner;
+    UUID ownerId;
     UUID tenantId;
 
    /**the weightage or sort key of this object**/

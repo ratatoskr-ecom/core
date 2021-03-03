@@ -36,9 +36,9 @@ public interface IBaseModel extends IBaseObject<UUID> {
 
     public void setDeleted(boolean deleted);
 
-    public UUID getOwner();
+    public UUID getOwnerId();
 
-    public void setOwner(UUID owner);
+    public void setOwnerId(UUID owner);
 
     public UUID getTenantId();
 
