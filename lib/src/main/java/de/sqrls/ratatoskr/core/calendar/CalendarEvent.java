@@ -68,7 +68,12 @@ public class CalendarEvent extends Thing {
      */
     Place meetingPlace;
 
-    CalendarEvent subEvent;
+    /**
+     * A flag to signal that this event is part of a larger event.
+     */
+    boolean hasParent;
+
+    CalendarEvent parentEvent;
 
     /**
      * The total number of individuals that may attend an event or venue.

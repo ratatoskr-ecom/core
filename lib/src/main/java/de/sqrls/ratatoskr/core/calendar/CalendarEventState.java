@@ -9,7 +9,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @EqualsAndHashCode(callSuper = true)
-public class CalendarEventStatus extends BaseState<CalendarEvent> {
+public class CalendarEventState extends BaseState<CalendarEvent> {
 
     public enum STATES {
         EventCancelled,
