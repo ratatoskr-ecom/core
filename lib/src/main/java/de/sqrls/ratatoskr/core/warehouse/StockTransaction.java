@@ -1,4 +1,4 @@
-package de.sqrls.ratatoskr.core.orders;
+package de.sqrls.ratatoskr.core.warehouse;
 /**
  * This file is part of Ratatoskr ECOM.
  * Copyright (C) 2020  SQRL SOLUTIONS UG
@@ -16,5 +16,5 @@ package de.sqrls.ratatoskr.core.orders;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class ShippingInformation {
+public class StockTransaction {
 }

@@ -1,4 +1,6 @@
-package de.sqrls.ratatoskr.core.orders;
+package de.sqrls.ratatoskr.core.tags;
+
+import java.util.List;
 /**
  * This file is part of Ratatoskr ECOM.
  * Copyright (C) 2020  SQRL SOLUTIONS UG
@@ -16,5 +18,12 @@ package de.sqrls.ratatoskr.core.orders;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class ShippingInformation {
+/**
+ * Marker interface for Objects that have tags attached
+ */
+public interface ITagable {
+
+    List<Tag> getTags();
+
+    void setTags(List<Tag> tags);
 }
